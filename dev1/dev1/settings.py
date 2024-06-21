@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 ]
 
 TAILWIND_APP_NAME = 'theme'
-INTERNAL_IPS = ['localhost'] # 127.0.0.1
+INTERNAL_IPS = ['localhost']  # 127.0.0.1
 
 NPM_BIN_PATH = "/usr/local/bin/npm"
 
@@ -57,6 +57,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+
+    # always add this at the last line
     "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
