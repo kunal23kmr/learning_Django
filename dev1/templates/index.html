@@ -1,17 +1,13 @@
-{%load static%}
+{% extends "layout.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
+{% block title %}
+Home page
+{% endblock  %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candy template</title>
-    <link rel="stylesheet" href="{%static 'style.css' %}">
-</head>
+{% block content %}
+<h1 class ="bg-blue-900 text-3xl">
+    Han ji, mai aapse hin puch rha hun , kaise ho aap?
+</h1>
 
-<body>
-    <h1>Hi from Candy </h1>
-</body>
 
-</html>
+{% endblock %}
