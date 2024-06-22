@@ -19,6 +19,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.all_app, name="all_app"),  # localhost:8000/app1
-    path('profile/', views.profile, name="profile"),  # localhost:8000/app1
+    path('', views.all_chai, name="all_app"),  # localhost:8000/app1
+    path('chai_detail/<int:chai_id>/', views.chai_detail, name="chai_detail"),
+    # localhost:8000/app1
 ]
